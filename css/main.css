@@ -5,8 +5,12 @@
 * {
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
-  padding: 0;
   margin: 0;
+}
+
+*,
+fieldset {
+  padding: 0;
 }
 
 :root,
@@ -61,7 +65,7 @@ button[type="submit"] {
 }
 
 h2,
-h3,
+.legend,
 footer p {
   font-size: .875em;
   padding-bottom: 1em;
@@ -87,7 +91,16 @@ header p {
  * *** Form *** *
  */
 
-form h3 {
+ fieldset,
+ button[type="submit"] {
+   border: none;
+ }
+
+ legend {
+   width: 100%;
+ }
+
+form .legend {
   padding-top: 2em;
   border-top: 2px solid #2d3945;
 }
@@ -101,8 +114,9 @@ select {
   font-size: .75em;
 }
 
+.legend,
 label,
-form h3:nth-of-type(2) ~ label.block-label {
+form .legend:nth-of-type(2) ~ label.block-label {
   display: block;
 }
 
@@ -152,7 +166,7 @@ select {
 
 input[type="checkbox"],
 input[type="radio"],
-form h3:nth-of-type(2) ~ label {
+form .legend:nth-of-type(2) ~ label {
   display: inline-block;
   vertical-align: middle;
 }
@@ -183,7 +197,6 @@ label[for="user-commentary"] {
 button[type="submit"] {
   background-color: #4ebbb5;
   padding: 1.25em 0;
-  border: none;
   margin-top: 1.375em;
   margin-bottom: 1.75em;
 }

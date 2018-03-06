@@ -36,66 +36,77 @@
     <div class="container">
       <form action="index.html" method="post">
 
-        <h3>Contact Information</h3>
+        <fieldset>
+          <legend>
+            <span class="legend">
+              Contact Information
+            </span>
+          </legend>
 
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" name="user_full_name" required placeholder="Required" autocomplete="name">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="user_full_name" required placeholder="Required" autocomplete="name">
 
-        <label for="email-address">Email Address</label>
-        <input type="email" id="email-address" name="user_email_address" required placeholder="Required" autocomplete="email">
+          <label for="email-address">Email Address</label>
+          <input type="email" id="email-address" name="user_email_address" required placeholder="Required" autocomplete="email">
 
-        <label for="phone-number">Phone Number</label>
-        <input type="tel" id="phone-number" name="user_phone_number" autocomplete="tel">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="user_phone_number" autocomplete="tel">
 
-        <label for="street-address">Street Address</label>
-        <input type="text" id="street-address" name="user_street_address" autofocus autocomplete="street-address">
+          <label for="street-address">Street Address</label>
+          <input type="text" id="street-address" name="user_street_address" autofocus autocomplete="street-address">
 
-        <label for="city">City</label>
-        <input type="text" id="city" name="user_city" autocomplete="address-level2">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" autocomplete="address-level2">
 
-        <label for="state">State</label>
-        <select name="user_state" id="state" autocomplete="address-level1">
-          <option value="" selected disabled hidden>Choose State</option>
-          <option value="altai_krai">Altai Krai</option>
-          <option value="leningrad_oblast">Leningrad Oblast</option>
-          <option value="novgorod_oblast">Novgorod Oblast</option>
-          <option value="novosibirsk_obslast">Novosibirsk Oblast</option>
-          <option value="pskov_oblast">Pskov Oblast</option>
-          <option value="saint_petersburg">Saint Petersburg, Federal City</option>
-        </select>
+          <label for="state">State</label>
+          <select name="user_state" id="state" autocomplete="address-level1">
+            <option value="" selected disabled hidden>Choose State</option>
+            <option value="altai_krai">Altai Krai</option>
+            <option value="leningrad_oblast">Leningrad Oblast</option>
+            <option value="novgorod_oblast">Novgorod Oblast</option>
+            <option value="novosibirsk_obslast">Novosibirsk Oblast</option>
+            <option value="pskov_oblast">Pskov Oblast</option>
+            <option value="saint_petersburg">Saint Petersburg, Federal City</option>
+          </select>
 
-        <label for="zip-code">Zip Code</label>
-        <input type="text" id="zip-code" name="user_zip_code" autocomplete="postal-code">
+          <label for="zip-code">Zip Code</label>
+          <input type="text" id="zip-code" name="user_zip_code" autocomplete="postal-code">
+        </fieldset>
 
-        <h3>Newsletter</h3>
+        <fieldset>
+          <legend>
+            <span class="legend">
+              Newsletter
+            </span>
+          </legend>
 
-        <label class="block-label">Select the newsletter you would like to receive</label>
+          <label class="block-label">Select the newsletter you would like to receive</label>
 
-        <input type="checkbox" id="html-news" name="newsletter_preferences" value="newsletter_html" checked>
-        <label for="html-news">HTML News</label>
-        <br>
+          <input type="checkbox" id="html-news" name="newsletter_preferences" value="newsletter_html" checked>
+          <label for="html-news">HTML News</label>
+          <br>
 
-        <input type="checkbox" id="css-news" name="newsletter_preferences" value="newsletter_css">
-        <label for="css-news">CSS News</label>
-        <br>
+          <input type="checkbox" id="css-news" name="newsletter_preferences" value="newsletter_css">
+          <label for="css-news">CSS News</label>
+          <br>
 
-        <input type="checkbox" id="js-news" name="newsletter_preferences" value="newsletter_js">
-        <label for="js-news">JavaScript News</label>
-        <br>
+          <input type="checkbox" id="js-news" name="newsletter_preferences" value="newsletter_js">
+          <label for="js-news">JavaScript News</label>
+          <br>
 
-        <label class="block-label">Newsletter format</label>
+          <label class="block-label">Newsletter format</label>
 
-        <input type="radio" id="html-format" name="newsletter_format" value="format_html" checked>
-        <label for="html-format">HTML</label>
-        <br>
+          <input type="radio" id="html-format" name="newsletter_format" value="format_html" checked>
+          <label for="html-format">HTML</label>
+          <br>
 
-        <input type="radio" id="plain-text-format" name="newsletter_format" value="format_plain_text">
-        <label for="plain-text-format">Plain Text</label>
-        <br>
+          <input type="radio" id="plain-text-format" name="newsletter_format" value="format_plain_text">
+          <label for="plain-text-format">Plain Text</label>
+          <br>
 
-        <label for="user-commentary">Other topics you'd like to hear about</label><br>
-        <textarea name="user_commentary" id="user-commentary" cols="30" rows="10"></textarea>
-        <br>
+          <label for="user-commentary">Other topics you'd like to hear about</label><br>
+          <textarea name="user_commentary" id="user-commentary" cols="30" rows="10"></textarea>
+        </fieldset>
 
         <button type="submit">Sign Up</button>
 
