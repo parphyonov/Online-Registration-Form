@@ -1,5 +1,5 @@
 /**
- * *** General Styles
+ * *** General Styles *** *
  */
 
 * {
@@ -21,16 +21,19 @@
 }
 
 /**
- * *** Header
+ * *** Header *** *
  */
 
 header {
   width: 100%;
+}
+
+header,
+footer p {
   text-align: center;
 }
 
 h1 {
-  color: #fff;
   background-color: #2d3945;
   font-size: 1em;
   text-transform: uppercase;
@@ -38,17 +41,137 @@ h1 {
   margin-bottom: 2em;
 }
 
-h2 {
+h1,
+button[type="submit"] {
+  color: #fff;
+}
+
+h2,
+h3 {
   font-size: .875em;
   padding-bottom: 1em;
+}
+
+p,
+label {
+  font-weight: 300;
 }
 
 header p {
   font-size: .6em;
   line-height: 1.75;
   letter-spacing: 1px;
-  font-weight: 300;
   padding: 0 3.4em 3.75em;
   border-bottom: 4px solid #2d3945;
   margin-bottom: 3px;
 }
+
+/**
+ * *** Form *** *
+ */
+
+form h3 {
+  padding-top: 2em;
+  border-top: 2px solid #2d3945;
+}
+
+label {
+  font-size: .75em;
+  margin: 1em 0 1.1705em;
+}
+
+label,
+form h3:nth-of-type(2) ~ label.block-label {
+  display: block;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  width: 100%;
+  background-color: #eff0f1;
+  font-size: 1em;
+  line-height: 1;
+  padding: .8125em 1.25em;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: .5em;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #46698b;
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+  font-size: .625em;
+  font-style: italic;
+  font-weight: 300;
+  padding-right: 1.25em;
+}
+
+select {
+  min-height: 50px;
+  font-size: .75em;
+  font-weight: 300;
+}
+
+#zip-code {
+  width: 55%;
+  margin-bottom: 1.875em;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+form h3:nth-of-type(2) ~ label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 .25em;
+}
+
+label:not([for]) {
+  line-height: 1.5;
+  letter-spacing: .5px;
+  margin-bottom: 0.7em;
+}
+
+label[for$="-news"],
+label[for$="-format"] {
+  padding-top: .25em;
+  margin-left: -.25em;
+  margin-bottom: 1em;
+}
+
+label[for="user-commentary"] {
+  margin-top: 2em;
+  margin-bottom: 1.333em;
+}
+
+button[type="submit"] {
+  width: 100%;
+  font-size: 1em;
+  background-color: #4ebbb5;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.375em;
+  margin-bottom: 1.75em;
+}
+
+/**
+ * *** Footer *** *
+ */
+
+footer p {
+   font-size: .875em;
+   font-style: italic;
+   margin-bottom: 14em;
+ }
