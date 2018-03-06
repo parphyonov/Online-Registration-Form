@@ -119,7 +119,7 @@ select {
 
 .legend,
 label,
-form .legend:nth-of-type(2) ~ label.block-label {
+form fieldset:nth-of-type(2) legend ~ label.block-label {
   display: block;
 }
 
@@ -146,10 +146,14 @@ textarea:focus {
   border: 2px solid #46698b;
 }
 
+select,
+input::-webkit-input-placeholder {
+  color: #adb2b7;
+}
+
 input::-webkit-input-placeholder {
   position: relative; /* Vertical Alignment of a Placeholder */
   bottom: .25em; /* Vertical Alignment of a Placeholder */
-  color: #adb2b7;
   text-align: right;
   font-size: .625em;
   padding-right: 1.25em;
@@ -176,7 +180,7 @@ select {
 
 input[type="checkbox"],
 input[type="radio"],
-form .legend:nth-of-type(2) ~ label {
+form fieldset:nth-of-type(2) legend ~ label {
   display: inline-block;
   vertical-align: middle;
 }
