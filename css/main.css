@@ -64,7 +64,7 @@ h1 {
   margin-bottom: 2em;
 }
 
-h1 .container ,
+h1,
 button[type="submit"] {
   color: #fff;
 }
@@ -131,7 +131,7 @@ select,
 textarea {
   background-color: #eff0f1;
   padding: .8125em 1.25em;
-  border: 2px solid #eff0f1;
+  border: 2px solid transparent;
   margin-bottom: .5em;
 }
 
