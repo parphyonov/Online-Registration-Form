@@ -53,6 +53,10 @@ footer p {
   text-align: center;
 }
 
+p {
+  color: #b1b5b9;
+}
+
 h1 {
   background-color: #2d3945;
   text-transform: uppercase;
@@ -80,7 +84,6 @@ select {
 }
 
 header p {
-  color: #b1b5b9;
   font-size: .6em;
   line-height: 1.75;
   letter-spacing: 1px;
